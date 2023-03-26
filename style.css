@@ -1,0 +1,112 @@
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+#textoEntrada {
+    display: block;
+    margin: auto;
+    width: 80%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#cajaBotones{
+    text-align: center;
+}
+
+#encriptar, #desencriptar {
+    display: inline-block;
+    background-color: #87CEFA;
+    color: #fff;
+    font-size: 16px;
+    border: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 20%;
+    height: 50px;
+}
+
+#contedorSalida {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid black ;
+    background-image: url("imagenes/lupa.png");
+    background-size: 50px;
+    overflow: auto; /* para agregar una barra de desplazamiento si se desborda */
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-position: left;
+    border-color: #6495ED;
+}
+
+#imagenSalida{
+    display: none; /* oculta la imagen para que solo se muestre como fondo */
+}
+
+#parrafoSalida {
+    font-size: 16px;
+    line-height: 1.5;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#alertaParrafo {
+    font-size: 14px;
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+}
+
+#encriptar:hover, #desencriptar:hover {
+    cursor: pointer;
+    background-color: #6495ED;
+}
+
+#encriptar:active, #desencriptar:active {
+    background-color: #4169E1;
+}
+
+#cajaHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cajaHeader img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    #textoEntrada {
+        width: 90%;
+    }
+
+    #encriptar, #desencriptar {
+        margin-right: 5px;
+    }
+}
+
+#contedorSalida-contenedorImagen{
+    width: 20%;
+    height: 50%px;
+}
+
